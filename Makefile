@@ -798,6 +798,10 @@ ifneq ($(USE_OT),)
 include addons/ot/Makefile
 endif
 
+ifneq ($(USE_DYNATRACE),)
+include addons/dynatrace/Makefile
+endif
+
 ifneq ($(USE_LIBATOMIC),)
   TARGET_LDFLAGS += -latomic
 endif
